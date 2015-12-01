@@ -1,0 +1,224 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>MartinsTrisel_Doc:  Fichier source de Z:/workspace/TriselMartins/src/com/metier/Poubelle.java</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">MartinsTrisel_Doc
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('_poubelle_8java_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Poubelle.java</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">package </span>com.metier;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">import</span> java.util.ArrayList;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">import</span> java.util.Calendar;</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="classcom_1_1metier_1_1_poubelle.html">    9</a></span>&#160;<span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="classcom_1_1metier_1_1_poubelle.html">Poubelle</a> {</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keyword">private</span> String idPoubelle;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keyword">private</span> <a class="code" href="classcom_1_1metier_1_1_type_dechet.html">TypeDechet</a> nature;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keyword">private</span> ArrayList&lt;Levee&gt; lesLevees;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keyword">private</span> String idHabitation;</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classcom_1_1metier_1_1_poubelle.html#ab7f1a7622f174ec2eb79e535b47a3d1a">   23</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="classcom_1_1metier_1_1_poubelle.html#ab7f1a7622f174ec2eb79e535b47a3d1a">Poubelle</a>(String idPoubelle, <a class="code" href="classcom_1_1metier_1_1_type_dechet.html">TypeDechet</a> nature, String idHabitation) {</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        super();</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        this.idPoubelle = idPoubelle;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        this.nature = nature;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        lesLevees = <span class="keyword">new</span> ArrayList&lt;Levee&gt;();</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        this.idHabitation = idHabitation;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    }</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classcom_1_1metier_1_1_poubelle.html#a2509f9e11f505cedc8e1cd969a541075">   38</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="classcom_1_1metier_1_1_poubelle.html#a2509f9e11f505cedc8e1cd969a541075">Poubelle</a>(String idPoubelle, <a class="code" href="classcom_1_1metier_1_1_type_dechet.html">TypeDechet</a> nature) {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        this.idPoubelle = idPoubelle;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        this.nature = nature;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        lesLevees = <span class="keyword">new</span> ArrayList&lt;Levee&gt;();</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    }</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    </div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="classcom_1_1metier_1_1_poubelle.html#a27b3a5208e7711f71d1065778f66ff8c">   49</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="classcom_1_1metier_1_1_type_dechet.html">TypeDechet</a> <a class="code" href="classcom_1_1metier_1_1_poubelle.html#a27b3a5208e7711f71d1065778f66ff8c">getNature</a>() {</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordflow">return</span> nature;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    }</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="classcom_1_1metier_1_1_poubelle.html#af3e5e1a0e99656ac1f25600333b7774f">   57</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classcom_1_1metier_1_1_poubelle.html#af3e5e1a0e99656ac1f25600333b7774f">setNature</a>(<a class="code" href="classcom_1_1metier_1_1_type_dechet.html">TypeDechet</a> nature) {</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        this.nature = nature;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    }</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="classcom_1_1metier_1_1_poubelle.html#ace9d96aef33038695ee9c23b563e828e">   65</a></span>&#160;    <span class="keyword">public</span> ArrayList&lt;Levee&gt; <a class="code" href="classcom_1_1metier_1_1_poubelle.html#ace9d96aef33038695ee9c23b563e828e">getLesLevees</a>() {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordflow">return</span> lesLevees;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    }</div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="classcom_1_1metier_1_1_poubelle.html#a781f65232b5cd6583204035aa61b4367">   73</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classcom_1_1metier_1_1_poubelle.html#a781f65232b5cd6583204035aa61b4367">setLesLevees</a>(ArrayList&lt;Levee&gt; lesLevees) {</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        this.lesLevees = lesLevees;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    }</div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="classcom_1_1metier_1_1_poubelle.html#a690f8a5e1a5f3300dc515f1c2a376e0e">   81</a></span>&#160;    <span class="keyword">public</span> String <a class="code" href="classcom_1_1metier_1_1_poubelle.html#a690f8a5e1a5f3300dc515f1c2a376e0e">getIdPoubelle</a>() {</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keywordflow">return</span> idPoubelle;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    }</div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="classcom_1_1metier_1_1_poubelle.html#aa5ce71376fcd6ffd30f13d813251f71a">   89</a></span>&#160;    <span class="keyword">public</span> String <a class="code" href="classcom_1_1metier_1_1_poubelle.html#aa5ce71376fcd6ffd30f13d813251f71a">getIdhabitation</a>() {</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="keywordflow">return</span> idHabitation;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    }</div>
+<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="classcom_1_1metier_1_1_poubelle.html#a36d7fe03ab56d001613d64d3d52849a8">   97</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classcom_1_1metier_1_1_poubelle.html#a36d7fe03ab56d001613d64d3d52849a8">setIdhabitation</a>(String idHabitation) {</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        this.idHabitation = idHabitation;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    }</div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="classcom_1_1metier_1_1_poubelle.html#a3b62c6914b14757b45188cc3ad1a1372">  105</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classcom_1_1metier_1_1_poubelle.html#a3b62c6914b14757b45188cc3ad1a1372">ajoutLevee</a>(<a class="code" href="classcom_1_1metier_1_1_levee.html">Levee</a> uneLevee)</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    {</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        lesLevees.add(uneLevee);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    }</div>
+<div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="classcom_1_1metier_1_1_poubelle.html#a83e7000730460e3fdabc58ac9dd001b2">  118</a></span>&#160;    <span class="keyword">public</span> ArrayList&lt;Levee&gt; <a class="code" href="classcom_1_1metier_1_1_poubelle.html#a83e7000730460e3fdabc58ac9dd001b2">getLesLevees</a>(<span class="keywordtype">int</span> an, <span class="keywordtype">int</span> mois)</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    {</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="comment">//Collection de tavail � declarer et a instancier</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        ArrayList&lt;Levee&gt; lesLeveesMois = <span class="keyword">new</span> ArrayList&lt;Levee&gt;();</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <span class="comment">//Objet calendar</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        Calendar cal = Calendar.getInstance();</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <span class="comment">//Parcours de la collection de levee</span></div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <span class="keywordflow">for</span>(<a class="code" href="classcom_1_1metier_1_1_levee.html">Levee</a> l : lesLevees)</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        {</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;            <span class="comment">//Extraire la date de levee dans 1 objet</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;            cal.setTime(l.getLaDate());</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;            <span class="comment">//Extraction annee et du mois</span></div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;            <span class="keywordtype">int</span> year = cal.get(Calendar.YEAR);</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;            <span class="keywordtype">int</span> month = cal.get(Calendar.MONTH)+1;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;            <span class="keywordflow">if</span>((an == year) &amp;&amp; (mois == month))</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;            {</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;                lesLeveesMois.add(l);</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;            }</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        }</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        </div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        <span class="keywordflow">return</span> lesLeveesMois;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    }</div>
+<div class="line"><a name="l00149"></a><span class="lineno"><a class="line" href="classcom_1_1metier_1_1_poubelle.html#afc646a84bf391e334f74a417055ae068">  149</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code" href="classcom_1_1metier_1_1_poubelle.html#afc646a84bf391e334f74a417055ae068">getCout</a>(<span class="keywordtype">int</span> an, <span class="keywordtype">int</span> mois)</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    {</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        <span class="keywordtype">double</span> cout = 0;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        ArrayList&lt;Levee&gt; lesLeveesMois = this.<a class="code" href="classcom_1_1metier_1_1_poubelle.html#ace9d96aef33038695ee9c23b563e828e">getLesLevees</a>(an, mois);</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        <span class="keywordflow">for</span>(<a class="code" href="classcom_1_1metier_1_1_levee.html">Levee</a> l : lesLeveesMois)</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        {</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;            cout = cout + l.getPoids() * <a class="code" href="classcom_1_1metier_1_1_poubelle.html#a27b3a5208e7711f71d1065778f66ff8c">getNature</a>().<a class="code" href="classcom_1_1metier_1_1_type_dechet.html#a4c5be6fe10c0c3ccf6001d06d5a645f2">getTarif</a>();</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        }</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        <span class="keywordflow">return</span> Math.round(cout);</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    }</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    @Override</div>
+<div class="line"><a name="l00163"></a><span class="lineno"><a class="line" href="classcom_1_1metier_1_1_poubelle.html#a8b67a0a08d0822829fdd4cf64fa72b54">  163</a></span>&#160;    <span class="keyword">public</span> String <a class="code" href="classcom_1_1metier_1_1_poubelle.html#a8b67a0a08d0822829fdd4cf64fa72b54">toString</a>() {</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;Poubelle [idPoubelle=&quot;</span> + idPoubelle + <span class="stringliteral">&quot;, nature=&quot;</span> + nature + <span class="stringliteral">&quot;, lesLevees=&quot;</span> + lesLevees</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;                + <span class="stringliteral">&quot;, idHabitation=&quot;</span> + idHabitation + <span class="stringliteral">&quot;]&quot;</span>;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    }</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    </div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    </div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    </div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;}</div>
+<div class="ttc" id="classcom_1_1metier_1_1_poubelle_html_a3b62c6914b14757b45188cc3ad1a1372"><div class="ttname"><a href="classcom_1_1metier_1_1_poubelle.html#a3b62c6914b14757b45188cc3ad1a1372">com.metier.Poubelle.ajoutLevee</a></div><div class="ttdeci">void ajoutLevee(Levee uneLevee)</div><div class="ttdef"><b>Definition:</b> <a href="_poubelle_8java_source.html#l00105">Poubelle.java:105</a></div></div>
+<div class="ttc" id="classcom_1_1metier_1_1_poubelle_html_a690f8a5e1a5f3300dc515f1c2a376e0e"><div class="ttname"><a href="classcom_1_1metier_1_1_poubelle.html#a690f8a5e1a5f3300dc515f1c2a376e0e">com.metier.Poubelle.getIdPoubelle</a></div><div class="ttdeci">String getIdPoubelle()</div><div class="ttdef"><b>Definition:</b> <a href="_poubelle_8java_source.html#l00081">Poubelle.java:81</a></div></div>
+<div class="ttc" id="classcom_1_1metier_1_1_poubelle_html_afc646a84bf391e334f74a417055ae068"><div class="ttname"><a href="classcom_1_1metier_1_1_poubelle.html#afc646a84bf391e334f74a417055ae068">com.metier.Poubelle.getCout</a></div><div class="ttdeci">double getCout(int an, int mois)</div><div class="ttdef"><b>Definition:</b> <a href="_poubelle_8java_source.html#l00149">Poubelle.java:149</a></div></div>
+<div class="ttc" id="classcom_1_1metier_1_1_poubelle_html_a83e7000730460e3fdabc58ac9dd001b2"><div class="ttname"><a href="classcom_1_1metier_1_1_poubelle.html#a83e7000730460e3fdabc58ac9dd001b2">com.metier.Poubelle.getLesLevees</a></div><div class="ttdeci">ArrayList&lt; Levee &gt; getLesLevees(int an, int mois)</div><div class="ttdef"><b>Definition:</b> <a href="_poubelle_8java_source.html#l00118">Poubelle.java:118</a></div></div>
+<div class="ttc" id="classcom_1_1metier_1_1_poubelle_html_a2509f9e11f505cedc8e1cd969a541075"><div class="ttname"><a href="classcom_1_1metier_1_1_poubelle.html#a2509f9e11f505cedc8e1cd969a541075">com.metier.Poubelle.Poubelle</a></div><div class="ttdeci">Poubelle(String idPoubelle, TypeDechet nature)</div><div class="ttdef"><b>Definition:</b> <a href="_poubelle_8java_source.html#l00038">Poubelle.java:38</a></div></div>
+<div class="ttc" id="classcom_1_1metier_1_1_poubelle_html_a781f65232b5cd6583204035aa61b4367"><div class="ttname"><a href="classcom_1_1metier_1_1_poubelle.html#a781f65232b5cd6583204035aa61b4367">com.metier.Poubelle.setLesLevees</a></div><div class="ttdeci">void setLesLevees(ArrayList&lt; Levee &gt; lesLevees)</div><div class="ttdef"><b>Definition:</b> <a href="_poubelle_8java_source.html#l00073">Poubelle.java:73</a></div></div>
+<div class="ttc" id="classcom_1_1metier_1_1_poubelle_html_af3e5e1a0e99656ac1f25600333b7774f"><div class="ttname"><a href="classcom_1_1metier_1_1_poubelle.html#af3e5e1a0e99656ac1f25600333b7774f">com.metier.Poubelle.setNature</a></div><div class="ttdeci">void setNature(TypeDechet nature)</div><div class="ttdef"><b>Definition:</b> <a href="_poubelle_8java_source.html#l00057">Poubelle.java:57</a></div></div>
+<div class="ttc" id="classcom_1_1metier_1_1_levee_html"><div class="ttname"><a href="classcom_1_1metier_1_1_levee.html">com.metier.Levee</a></div><div class="ttdef"><b>Definition:</b> <a href="_levee_8java_source.html#l00011">Levee.java:11</a></div></div>
+<div class="ttc" id="classcom_1_1metier_1_1_poubelle_html_a8b67a0a08d0822829fdd4cf64fa72b54"><div class="ttname"><a href="classcom_1_1metier_1_1_poubelle.html#a8b67a0a08d0822829fdd4cf64fa72b54">com.metier.Poubelle.toString</a></div><div class="ttdeci">String toString()</div><div class="ttdef"><b>Definition:</b> <a href="_poubelle_8java_source.html#l00163">Poubelle.java:163</a></div></div>
+<div class="ttc" id="classcom_1_1metier_1_1_type_dechet_html_a4c5be6fe10c0c3ccf6001d06d5a645f2"><div class="ttname"><a href="classcom_1_1metier_1_1_type_dechet.html#a4c5be6fe10c0c3ccf6001d06d5a645f2">com.metier.TypeDechet.getTarif</a></div><div class="ttdeci">Double getTarif()</div><div class="ttdef"><b>Definition:</b> <a href="_type_dechet_8java_source.html#l00047">TypeDechet.java:47</a></div></div>
+<div class="ttc" id="classcom_1_1metier_1_1_poubelle_html_aa5ce71376fcd6ffd30f13d813251f71a"><div class="ttname"><a href="classcom_1_1metier_1_1_poubelle.html#aa5ce71376fcd6ffd30f13d813251f71a">com.metier.Poubelle.getIdhabitation</a></div><div class="ttdeci">String getIdhabitation()</div><div class="ttdef"><b>Definition:</b> <a href="_poubelle_8java_source.html#l00089">Poubelle.java:89</a></div></div>
+<div class="ttc" id="classcom_1_1metier_1_1_poubelle_html_ace9d96aef33038695ee9c23b563e828e"><div class="ttname"><a href="classcom_1_1metier_1_1_poubelle.html#ace9d96aef33038695ee9c23b563e828e">com.metier.Poubelle.getLesLevees</a></div><div class="ttdeci">ArrayList&lt; Levee &gt; getLesLevees()</div><div class="ttdef"><b>Definition:</b> <a href="_poubelle_8java_source.html#l00065">Poubelle.java:65</a></div></div>
+<div class="ttc" id="classcom_1_1metier_1_1_poubelle_html_a36d7fe03ab56d001613d64d3d52849a8"><div class="ttname"><a href="classcom_1_1metier_1_1_poubelle.html#a36d7fe03ab56d001613d64d3d52849a8">com.metier.Poubelle.setIdhabitation</a></div><div class="ttdeci">void setIdhabitation(String idHabitation)</div><div class="ttdef"><b>Definition:</b> <a href="_poubelle_8java_source.html#l00097">Poubelle.java:97</a></div></div>
+<div class="ttc" id="classcom_1_1metier_1_1_poubelle_html_ab7f1a7622f174ec2eb79e535b47a3d1a"><div class="ttname"><a href="classcom_1_1metier_1_1_poubelle.html#ab7f1a7622f174ec2eb79e535b47a3d1a">com.metier.Poubelle.Poubelle</a></div><div class="ttdeci">Poubelle(String idPoubelle, TypeDechet nature, String idHabitation)</div><div class="ttdef"><b>Definition:</b> <a href="_poubelle_8java_source.html#l00023">Poubelle.java:23</a></div></div>
+<div class="ttc" id="classcom_1_1metier_1_1_poubelle_html"><div class="ttname"><a href="classcom_1_1metier_1_1_poubelle.html">com.metier.Poubelle</a></div><div class="ttdef"><b>Definition:</b> <a href="_poubelle_8java_source.html#l00009">Poubelle.java:9</a></div></div>
+<div class="ttc" id="classcom_1_1metier_1_1_poubelle_html_a27b3a5208e7711f71d1065778f66ff8c"><div class="ttname"><a href="classcom_1_1metier_1_1_poubelle.html#a27b3a5208e7711f71d1065778f66ff8c">com.metier.Poubelle.getNature</a></div><div class="ttdeci">TypeDechet getNature()</div><div class="ttdef"><b>Definition:</b> <a href="_poubelle_8java_source.html#l00049">Poubelle.java:49</a></div></div>
+<div class="ttc" id="classcom_1_1metier_1_1_type_dechet_html"><div class="ttname"><a href="classcom_1_1metier_1_1_type_dechet.html">com.metier.TypeDechet</a></div><div class="ttdef"><b>Definition:</b> <a href="_type_dechet_8java_source.html#l00007">TypeDechet.java:7</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_0a31c64d9f1f2c74acde1e4feea70c37.html">Z:</a></li><li class="navelem"><a class="el" href="dir_66183ff917921ce7e1c24db1515b72af.html">workspace</a></li><li class="navelem"><a class="el" href="dir_af01f8a927658f6dea520803c0646f4e.html">TriselMartins</a></li><li class="navelem"><a class="el" href="dir_acf8adae05f6b95405510d40e6d386db.html">src</a></li><li class="navelem"><a class="el" href="dir_609d7c2b7fd3a4ad70f07dcbdc5d16b6.html">com</a></li><li class="navelem"><a class="el" href="dir_b802e51e1b4233d791a93b846129453a.html">metier</a></li><li class="navelem"><b>Poubelle.java</b></li>
+    <li class="footer">Généré par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
+  </ul>
+</div>
+</body>
+</html>

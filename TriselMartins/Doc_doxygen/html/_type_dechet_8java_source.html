@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>MartinsTrisel_Doc:  Fichier source de Z:/workspace/TriselMartins/src/com/metier/TypeDechet.java</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">MartinsTrisel_Doc
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('_type_dechet_8java_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">TypeDechet.java</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">package </span>com.metier;</div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="classcom_1_1metier_1_1_type_dechet.html">    7</a></span>&#160;<span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="classcom_1_1metier_1_1_type_dechet.html">TypeDechet</a> {</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <span class="keyword">private</span> String code;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <span class="keyword">private</span> String libelle;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keyword">private</span> Double tarif;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classcom_1_1metier_1_1_type_dechet.html#af0342dbd4375e15cae9c5181c07dd0c5">   20</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="classcom_1_1metier_1_1_type_dechet.html#af0342dbd4375e15cae9c5181c07dd0c5">TypeDechet</a>(String code, String libelle, Double tarif) {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        super();</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        this.code = code;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        this.libelle = libelle;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        this.tarif = tarif;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    }</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classcom_1_1metier_1_1_type_dechet.html#aea4d768137d7734ed7af743672c531d9">   31</a></span>&#160;    <span class="keyword">public</span> String <a class="code" href="classcom_1_1metier_1_1_type_dechet.html#aea4d768137d7734ed7af743672c531d9">getLibelle</a>() {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keywordflow">return</span> libelle;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    }</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classcom_1_1metier_1_1_type_dechet.html#a586a763fe41fe416c8ca9de23e7d448d">   39</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classcom_1_1metier_1_1_type_dechet.html#a586a763fe41fe416c8ca9de23e7d448d">setLibelle</a>(String libelle) {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        this.libelle = libelle;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    }</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="classcom_1_1metier_1_1_type_dechet.html#a4c5be6fe10c0c3ccf6001d06d5a645f2">   47</a></span>&#160;    <span class="keyword">public</span> Double <a class="code" href="classcom_1_1metier_1_1_type_dechet.html#a4c5be6fe10c0c3ccf6001d06d5a645f2">getTarif</a>() {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordflow">return</span> tarif;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    }</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classcom_1_1metier_1_1_type_dechet.html#a804c3af4abaa3b9a6b23a41a8a76464a">   55</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classcom_1_1metier_1_1_type_dechet.html#a804c3af4abaa3b9a6b23a41a8a76464a">setTarif</a>(Double tarif) {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        this.tarif = tarif;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="classcom_1_1metier_1_1_type_dechet.html#a75363426d856f05d02556d734c534baf">   63</a></span>&#160;    <span class="keyword">public</span> String <a class="code" href="classcom_1_1metier_1_1_type_dechet.html#a75363426d856f05d02556d734c534baf">getCode</a>() {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordflow">return</span> code;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    }</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    @Override</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="classcom_1_1metier_1_1_type_dechet.html#a0d2909aa7ed5db2c8684b4db9f416824">   71</a></span>&#160;    <span class="keyword">public</span> String <a class="code" href="classcom_1_1metier_1_1_type_dechet.html#a0d2909aa7ed5db2c8684b4db9f416824">toString</a>() {</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;TypeDechet [code=&quot;</span> + code + <span class="stringliteral">&quot;, libelle=&quot;</span> + libelle + <span class="stringliteral">&quot;, tarif=&quot;</span> + tarif + <span class="stringliteral">&quot;]&quot;</span>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    }</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;}</div>
+<div class="ttc" id="classcom_1_1metier_1_1_type_dechet_html_a0d2909aa7ed5db2c8684b4db9f416824"><div class="ttname"><a href="classcom_1_1metier_1_1_type_dechet.html#a0d2909aa7ed5db2c8684b4db9f416824">com.metier.TypeDechet.toString</a></div><div class="ttdeci">String toString()</div><div class="ttdef"><b>Definition:</b> <a href="_type_dechet_8java_source.html#l00071">TypeDechet.java:71</a></div></div>
+<div class="ttc" id="classcom_1_1metier_1_1_type_dechet_html_aea4d768137d7734ed7af743672c531d9"><div class="ttname"><a href="classcom_1_1metier_1_1_type_dechet.html#aea4d768137d7734ed7af743672c531d9">com.metier.TypeDechet.getLibelle</a></div><div class="ttdeci">String getLibelle()</div><div class="ttdef"><b>Definition:</b> <a href="_type_dechet_8java_source.html#l00031">TypeDechet.java:31</a></div></div>
+<div class="ttc" id="classcom_1_1metier_1_1_type_dechet_html_a804c3af4abaa3b9a6b23a41a8a76464a"><div class="ttname"><a href="classcom_1_1metier_1_1_type_dechet.html#a804c3af4abaa3b9a6b23a41a8a76464a">com.metier.TypeDechet.setTarif</a></div><div class="ttdeci">void setTarif(Double tarif)</div><div class="ttdef"><b>Definition:</b> <a href="_type_dechet_8java_source.html#l00055">TypeDechet.java:55</a></div></div>
+<div class="ttc" id="classcom_1_1metier_1_1_type_dechet_html_a586a763fe41fe416c8ca9de23e7d448d"><div class="ttname"><a href="classcom_1_1metier_1_1_type_dechet.html#a586a763fe41fe416c8ca9de23e7d448d">com.metier.TypeDechet.setLibelle</a></div><div class="ttdeci">void setLibelle(String libelle)</div><div class="ttdef"><b>Definition:</b> <a href="_type_dechet_8java_source.html#l00039">TypeDechet.java:39</a></div></div>
+<div class="ttc" id="classcom_1_1metier_1_1_type_dechet_html_a4c5be6fe10c0c3ccf6001d06d5a645f2"><div class="ttname"><a href="classcom_1_1metier_1_1_type_dechet.html#a4c5be6fe10c0c3ccf6001d06d5a645f2">com.metier.TypeDechet.getTarif</a></div><div class="ttdeci">Double getTarif()</div><div class="ttdef"><b>Definition:</b> <a href="_type_dechet_8java_source.html#l00047">TypeDechet.java:47</a></div></div>
+<div class="ttc" id="classcom_1_1metier_1_1_type_dechet_html_a75363426d856f05d02556d734c534baf"><div class="ttname"><a href="classcom_1_1metier_1_1_type_dechet.html#a75363426d856f05d02556d734c534baf">com.metier.TypeDechet.getCode</a></div><div class="ttdeci">String getCode()</div><div class="ttdef"><b>Definition:</b> <a href="_type_dechet_8java_source.html#l00063">TypeDechet.java:63</a></div></div>
+<div class="ttc" id="classcom_1_1metier_1_1_type_dechet_html_af0342dbd4375e15cae9c5181c07dd0c5"><div class="ttname"><a href="classcom_1_1metier_1_1_type_dechet.html#af0342dbd4375e15cae9c5181c07dd0c5">com.metier.TypeDechet.TypeDechet</a></div><div class="ttdeci">TypeDechet(String code, String libelle, Double tarif)</div><div class="ttdef"><b>Definition:</b> <a href="_type_dechet_8java_source.html#l00020">TypeDechet.java:20</a></div></div>
+<div class="ttc" id="classcom_1_1metier_1_1_type_dechet_html"><div class="ttname"><a href="classcom_1_1metier_1_1_type_dechet.html">com.metier.TypeDechet</a></div><div class="ttdef"><b>Definition:</b> <a href="_type_dechet_8java_source.html#l00007">TypeDechet.java:7</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_0a31c64d9f1f2c74acde1e4feea70c37.html">Z:</a></li><li class="navelem"><a class="el" href="dir_66183ff917921ce7e1c24db1515b72af.html">workspace</a></li><li class="navelem"><a class="el" href="dir_af01f8a927658f6dea520803c0646f4e.html">TriselMartins</a></li><li class="navelem"><a class="el" href="dir_acf8adae05f6b95405510d40e6d386db.html">src</a></li><li class="navelem"><a class="el" href="dir_609d7c2b7fd3a4ad70f07dcbdc5d16b6.html">com</a></li><li class="navelem"><a class="el" href="dir_b802e51e1b4233d791a93b846129453a.html">metier</a></li><li class="navelem"><b>TypeDechet.java</b></li>
+    <li class="footer">Généré par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
+  </ul>
+</div>
+</body>
+</html>

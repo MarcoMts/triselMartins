@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>MartinsTrisel_Doc:  Fichier source de Z:/workspace/TriselMartins/src/com/tests/LeveeTest.java</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">MartinsTrisel_Doc
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- GÃ©nÃ©rÃ© par Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('_2_levee_test_8java_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">LeveeTest.java</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">package </span>com.tests;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">import</span> <a class="code" href="namespacecom.html">com</a>.<a class="code" href="namespacecom_1_1metier.html">metier</a>.<a class="code" href="classcom_1_1metier_1_1_levee.html">Levee</a>;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">import</span> <span class="keyword">static</span> org.junit.Assert.*;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">import</span> java.util.Date;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">import</span> org.junit.After;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">import</span> org.junit.Before;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">import</span> org.junit.Test;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">import</span> java.text.ParseException;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">import</span> java.text.SimpleDateFormat;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classcom_1_1tests_1_1_levee_test.html">   19</a></span>&#160;<span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="classcom_1_1tests_1_1_levee_test.html">LeveeTest</a> {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">private</span> SimpleDateFormat dateFormat = <span class="keyword">new</span> SimpleDateFormat(<span class="stringliteral">&quot;dd/MM/yyyy&quot;</span>);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">private</span> <a class="code" href="classcom_1_1metier_1_1_levee.html">Levee</a> levee;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">private</span> <a class="code" href="classcom_1_1metier_1_1_levee.html">Levee</a> levee2;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">private</span> Date date=null;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">private</span> Date date2=null;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    @Before</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classcom_1_1tests_1_1_levee_test.html#a6d52c6b30428e8ec57347a7de99aa089">   32</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classcom_1_1tests_1_1_levee_test.html#a6d52c6b30428e8ec57347a7de99aa089">setUp</a>() throws Exception {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keywordflow">try</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            date=dateFormat.parse(<span class="stringliteral">&quot;30/09/2015&quot;</span>);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            date2=dateFormat.parse(<span class="stringliteral">&quot;30/09/2016&quot;</span>);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            levee = <span class="keyword">new</span> <a class="code" href="classcom_1_1metier_1_1_levee.html">Levee</a>(1, date,12.2, <span class="stringliteral">&quot;1&quot;</span>);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            levee2 = <span class="keyword">new</span> <a class="code" href="classcom_1_1metier_1_1_levee.html">Levee</a>(date,12.2, <span class="stringliteral">&quot;1&quot;</span>);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        }<span class="keywordflow">catch</span>(ParseException e){</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            e.printStackTrace();</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        }</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    }</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    @After</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="classcom_1_1tests_1_1_levee_test.html#aff3c8682b1ca2e4858d3df467827f7bc">   49</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classcom_1_1tests_1_1_levee_test.html#aff3c8682b1ca2e4858d3df467827f7bc">tearDown</a>() throws Exception {</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        levee=null;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        levee2=null;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    }</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    @Test</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="classcom_1_1tests_1_1_levee_test.html#a017df0447a9294a65a758f7590937787">   58</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classcom_1_1tests_1_1_levee_test.html#a017df0447a9294a65a758f7590937787">testLevee</a>() {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        assertNotNull(<span class="stringliteral">&quot;L&#39;instance est créée&quot;</span>, levee);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        assertNotNull(<span class="stringliteral">&quot;L&#39;instance est créée&quot;</span>, levee2);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    }</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    @Test</div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="classcom_1_1tests_1_1_levee_test.html#a93e4376f35149e208029460bca5df339">   66</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classcom_1_1tests_1_1_levee_test.html#a93e4376f35149e208029460bca5df339">testGetLaDate</a>() {</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        assertEquals(<span class="stringliteral">&quot;Est ce que la date est correct&quot;</span>, date,levee.<a class="code" href="classcom_1_1metier_1_1_levee.html#a1d7e67fadea436d07cca8b7414335d63">getLaDate</a>());</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        assertEquals(<span class="stringliteral">&quot;Est ce que la date est correct&quot;</span>, date,levee2.<a class="code" href="classcom_1_1metier_1_1_levee.html#a1d7e67fadea436d07cca8b7414335d63">getLaDate</a>());</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        assertNotEquals(<span class="stringliteral">&quot;Est ce que la date n&#39;est pas correct&quot;</span>, date2,levee.<a class="code" href="classcom_1_1metier_1_1_levee.html#a1d7e67fadea436d07cca8b7414335d63">getLaDate</a>());</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        assertNotEquals(<span class="stringliteral">&quot;Est ce que la date n&#39;est pas correct&quot;</span>, date2,levee2.<a class="code" href="classcom_1_1metier_1_1_levee.html#a1d7e67fadea436d07cca8b7414335d63">getLaDate</a>());</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    }</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    @Test</div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="classcom_1_1tests_1_1_levee_test.html#a00957d72d65be3055a88f339a07bda1d">   77</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classcom_1_1tests_1_1_levee_test.html#a00957d72d65be3055a88f339a07bda1d">testSetLaDate</a>() {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        levee.<a class="code" href="classcom_1_1metier_1_1_levee.html#a7a84d0b797922f391fac61a1afcff8d4">setLaDate</a>(date2);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        assertEquals(<span class="stringliteral">&quot;Est ce que la date est correct&quot;</span>, date2,levee.<a class="code" href="classcom_1_1metier_1_1_levee.html#a1d7e67fadea436d07cca8b7414335d63">getLaDate</a>());</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        levee2.<a class="code" href="classcom_1_1metier_1_1_levee.html#a7a84d0b797922f391fac61a1afcff8d4">setLaDate</a>(date2);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        assertEquals(<span class="stringliteral">&quot;Est ce que la date est correct&quot;</span>, date2,levee2.<a class="code" href="classcom_1_1metier_1_1_levee.html#a1d7e67fadea436d07cca8b7414335d63">getLaDate</a>());</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        levee.<a class="code" href="classcom_1_1metier_1_1_levee.html#a7a84d0b797922f391fac61a1afcff8d4">setLaDate</a>(date2);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        assertNotEquals(<span class="stringliteral">&quot;Est ce que la date n&#39;est pas correct&quot;</span>, date,levee.<a class="code" href="classcom_1_1metier_1_1_levee.html#a1d7e67fadea436d07cca8b7414335d63">getLaDate</a>());</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        levee2.<a class="code" href="classcom_1_1metier_1_1_levee.html#a7a84d0b797922f391fac61a1afcff8d4">setLaDate</a>(date2);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        assertNotEquals(<span class="stringliteral">&quot;Est ce que la date n&#39;est pas correct&quot;</span>, date,levee2.<a class="code" href="classcom_1_1metier_1_1_levee.html#a1d7e67fadea436d07cca8b7414335d63">getLaDate</a>());</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    }</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    @Test</div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="classcom_1_1tests_1_1_levee_test.html#acc6476581358b478da9afb125cc4eff5">   91</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classcom_1_1tests_1_1_levee_test.html#acc6476581358b478da9afb125cc4eff5">testGetPoids</a>() {</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        assertEquals(0.001, 12.2,levee.<a class="code" href="classcom_1_1metier_1_1_levee.html#a53538a8aa880943423e37e9d6572a102">getPoids</a>());</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        assertEquals(0.001, 12.2,levee2.<a class="code" href="classcom_1_1metier_1_1_levee.html#a53538a8aa880943423e37e9d6572a102">getPoids</a>());</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        assertNotEquals(<span class="stringliteral">&quot;Est ce que le poid n&#39;est pas correct&quot;</span>, 13.2,levee.<a class="code" href="classcom_1_1metier_1_1_levee.html#a53538a8aa880943423e37e9d6572a102">getPoids</a>());</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        assertNotEquals(<span class="stringliteral">&quot;Est ce que le poid n&#39;est pas correct&quot;</span>, 13.2,levee2.<a class="code" href="classcom_1_1metier_1_1_levee.html#a53538a8aa880943423e37e9d6572a102">getPoids</a>());</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    }</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    @Test</div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="classcom_1_1tests_1_1_levee_test.html#a4a6ce591926f36d36a3ea78544aef5fc">  101</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classcom_1_1tests_1_1_levee_test.html#a4a6ce591926f36d36a3ea78544aef5fc">testSetPoids</a>() {</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        levee.<a class="code" href="classcom_1_1metier_1_1_levee.html#ac69e91854b2e07a0fb979a13060c0233">setPoids</a>(13.5);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        assertEquals(0.001, 13.5,levee.<a class="code" href="classcom_1_1metier_1_1_levee.html#a53538a8aa880943423e37e9d6572a102">getPoids</a>());</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        levee2.<a class="code" href="classcom_1_1metier_1_1_levee.html#ac69e91854b2e07a0fb979a13060c0233">setPoids</a>(13.5);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        assertEquals(0.001, 13.5,levee2.<a class="code" href="classcom_1_1metier_1_1_levee.html#a53538a8aa880943423e37e9d6572a102">getPoids</a>());</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        levee.<a class="code" href="classcom_1_1metier_1_1_levee.html#ac69e91854b2e07a0fb979a13060c0233">setPoids</a>(13.5);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        assertNotEquals(<span class="stringliteral">&quot;Est ce que le poid n&#39;est pas correct&quot;</span>, 12.2,levee.<a class="code" href="classcom_1_1metier_1_1_levee.html#a53538a8aa880943423e37e9d6572a102">getPoids</a>());</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        levee2.<a class="code" href="classcom_1_1metier_1_1_levee.html#ac69e91854b2e07a0fb979a13060c0233">setPoids</a>(13.5);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        assertNotEquals(<span class="stringliteral">&quot;Est ce que le poid n&#39;est pas correct&quot;</span>, 12.2,levee2.<a class="code" href="classcom_1_1metier_1_1_levee.html#a53538a8aa880943423e37e9d6572a102">getPoids</a>());</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    }</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    @Test</div>
+<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="classcom_1_1tests_1_1_levee_test.html#ad24636eebea5e93378112adbfa4be53e">  115</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classcom_1_1tests_1_1_levee_test.html#ad24636eebea5e93378112adbfa4be53e">testGetIdLevee</a>() {  </div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        assertEquals(<span class="stringliteral">&quot;Est ce que le Id est correct&quot;</span>, 1,levee.<a class="code" href="classcom_1_1metier_1_1_levee.html#ab00b40d8d8274fd910bbc7a5e43595c9">getIdLevee</a>());</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        assertNotEquals(<span class="stringliteral">&quot;Est ce que le Id n&#39;est pas correct&quot;</span>, 2,levee.<a class="code" href="classcom_1_1metier_1_1_levee.html#ab00b40d8d8274fd910bbc7a5e43595c9">getIdLevee</a>());</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        assertNotEquals(<span class="stringliteral">&quot;Est ce que le Id n&#39;est pas correct&quot;</span>, 2,levee2.<a class="code" href="classcom_1_1metier_1_1_levee.html#ab00b40d8d8274fd910bbc7a5e43595c9">getIdLevee</a>());</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    }</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    @Test</div>
+<div class="line"><a name="l00124"></a><span class="lineno"><a class="line" href="classcom_1_1tests_1_1_levee_test.html#a72fdd2dec116f0cf6796747a75e3ec5c">  124</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classcom_1_1tests_1_1_levee_test.html#a72fdd2dec116f0cf6796747a75e3ec5c">testGetIdPoubelle</a>() {</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        assertEquals(<span class="stringliteral">&quot;Est ce que l&#39;id poubelle est correct&quot;</span>, <span class="stringliteral">&quot;1&quot;</span>,levee.<a class="code" href="classcom_1_1metier_1_1_levee.html#afe21fe6d95d478dbe1004a07e32855bd">getIdPoubelle</a>());</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        assertEquals(<span class="stringliteral">&quot;Est ce que l&#39;id poubelle est correct&quot;</span>, <span class="stringliteral">&quot;1&quot;</span>,levee2.<a class="code" href="classcom_1_1metier_1_1_levee.html#afe21fe6d95d478dbe1004a07e32855bd">getIdPoubelle</a>());</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        assertNotEquals(<span class="stringliteral">&quot;Est ce que l&#39;id poubelle n&#39;est pas correct&quot;</span>, <span class="stringliteral">&quot;2&quot;</span>,levee.<a class="code" href="classcom_1_1metier_1_1_levee.html#afe21fe6d95d478dbe1004a07e32855bd">getIdPoubelle</a>());</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        assertNotEquals(<span class="stringliteral">&quot;Est ce que l&#39;id poubelle n&#39;est pas correct&quot;</span>, <span class="stringliteral">&quot;2&quot;</span>,levee2.<a class="code" href="classcom_1_1metier_1_1_levee.html#afe21fe6d95d478dbe1004a07e32855bd">getIdPoubelle</a>());</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    }</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    @Test</div>
+<div class="line"><a name="l00134"></a><span class="lineno"><a class="line" href="classcom_1_1tests_1_1_levee_test.html#a68a64ead364935bcf6e79da08eea5962">  134</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classcom_1_1tests_1_1_levee_test.html#a68a64ead364935bcf6e79da08eea5962">testToString</a>() {</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        assertNotEquals(<span class="stringliteral">&quot;Est ce que le ToString est correct&quot;</span>, null,levee.<a class="code" href="classcom_1_1metier_1_1_levee.html#aa61b0db52260baca6dabf83b705aeb77">toString</a>());</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        assertNotEquals(<span class="stringliteral">&quot;Est ce que le ToString est correct&quot;</span>, null,levee2.<a class="code" href="classcom_1_1metier_1_1_levee.html#aa61b0db52260baca6dabf83b705aeb77">toString</a>());</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    }</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;}</div>
+<div class="ttc" id="classcom_1_1tests_1_1_levee_test_html_a93e4376f35149e208029460bca5df339"><div class="ttname"><a href="classcom_1_1tests_1_1_levee_test.html#a93e4376f35149e208029460bca5df339">com.tests.LeveeTest.testGetLaDate</a></div><div class="ttdeci">void testGetLaDate()</div><div class="ttdef"><b>Definition:</b> <a href="_2_levee_test_8java_source.html#l00066">LeveeTest.java:66</a></div></div>
+<div class="ttc" id="classcom_1_1metier_1_1_levee_html_a1d7e67fadea436d07cca8b7414335d63"><div class="ttname"><a href="classcom_1_1metier_1_1_levee.html#a1d7e67fadea436d07cca8b7414335d63">com.metier.Levee.getLaDate</a></div><div class="ttdeci">Date getLaDate()</div><div class="ttdef"><b>Definition:</b> <a href="_levee_8java_source.html#l00062">Levee.java:62</a></div></div>
+<div class="ttc" id="classcom_1_1tests_1_1_levee_test_html_a017df0447a9294a65a758f7590937787"><div class="ttname"><a href="classcom_1_1tests_1_1_levee_test.html#a017df0447a9294a65a758f7590937787">com.tests.LeveeTest.testLevee</a></div><div class="ttdeci">void testLevee()</div><div class="ttdef"><b>Definition:</b> <a href="_2_levee_test_8java_source.html#l00058">LeveeTest.java:58</a></div></div>
+<div class="ttc" id="classcom_1_1tests_1_1_levee_test_html_a00957d72d65be3055a88f339a07bda1d"><div class="ttname"><a href="classcom_1_1tests_1_1_levee_test.html#a00957d72d65be3055a88f339a07bda1d">com.tests.LeveeTest.testSetLaDate</a></div><div class="ttdeci">void testSetLaDate()</div><div class="ttdef"><b>Definition:</b> <a href="_2_levee_test_8java_source.html#l00077">LeveeTest.java:77</a></div></div>
+<div class="ttc" id="classcom_1_1tests_1_1_levee_test_html_a6d52c6b30428e8ec57347a7de99aa089"><div class="ttname"><a href="classcom_1_1tests_1_1_levee_test.html#a6d52c6b30428e8ec57347a7de99aa089">com.tests.LeveeTest.setUp</a></div><div class="ttdeci">void setUp()</div><div class="ttdef"><b>Definition:</b> <a href="_2_levee_test_8java_source.html#l00032">LeveeTest.java:32</a></div></div>
+<div class="ttc" id="namespacecom_html"><div class="ttname"><a href="namespacecom.html">com</a></div></div>
+<div class="ttc" id="classcom_1_1tests_1_1_levee_test_html_acc6476581358b478da9afb125cc4eff5"><div class="ttname"><a href="classcom_1_1tests_1_1_levee_test.html#acc6476581358b478da9afb125cc4eff5">com.tests.LeveeTest.testGetPoids</a></div><div class="ttdeci">void testGetPoids()</div><div class="ttdef"><b>Definition:</b> <a href="_2_levee_test_8java_source.html#l00091">LeveeTest.java:91</a></div></div>
+<div class="ttc" id="classcom_1_1tests_1_1_levee_test_html_ad24636eebea5e93378112adbfa4be53e"><div class="ttname"><a href="classcom_1_1tests_1_1_levee_test.html#ad24636eebea5e93378112adbfa4be53e">com.tests.LeveeTest.testGetIdLevee</a></div><div class="ttdeci">void testGetIdLevee()</div><div class="ttdef"><b>Definition:</b> <a href="_2_levee_test_8java_source.html#l00115">LeveeTest.java:115</a></div></div>
+<div class="ttc" id="classcom_1_1metier_1_1_levee_html_afe21fe6d95d478dbe1004a07e32855bd"><div class="ttname"><a href="classcom_1_1metier_1_1_levee.html#afe21fe6d95d478dbe1004a07e32855bd">com.metier.Levee.getIdPoubelle</a></div><div class="ttdeci">String getIdPoubelle()</div><div class="ttdef"><b>Definition:</b> <a href="_levee_8java_source.html#l00054">Levee.java:54</a></div></div>
+<div class="ttc" id="classcom_1_1metier_1_1_levee_html_ac69e91854b2e07a0fb979a13060c0233"><div class="ttname"><a href="classcom_1_1metier_1_1_levee.html#ac69e91854b2e07a0fb979a13060c0233">com.metier.Levee.setPoids</a></div><div class="ttdeci">void setPoids(Double poids)</div><div class="ttdef"><b>Definition:</b> <a href="_levee_8java_source.html#l00086">Levee.java:86</a></div></div>
+<div class="ttc" id="classcom_1_1tests_1_1_levee_test_html_a68a64ead364935bcf6e79da08eea5962"><div class="ttname"><a href="classcom_1_1tests_1_1_levee_test.html#a68a64ead364935bcf6e79da08eea5962">com.tests.LeveeTest.testToString</a></div><div class="ttdeci">void testToString()</div><div class="ttdef"><b>Definition:</b> <a href="_2_levee_test_8java_source.html#l00134">LeveeTest.java:134</a></div></div>
+<div class="ttc" id="classcom_1_1metier_1_1_levee_html"><div class="ttname"><a href="classcom_1_1metier_1_1_levee.html">com.metier.Levee</a></div><div class="ttdef"><b>Definition:</b> <a href="_levee_8java_source.html#l00011">Levee.java:11</a></div></div>
+<div class="ttc" id="classcom_1_1metier_1_1_levee_html_a53538a8aa880943423e37e9d6572a102"><div class="ttname"><a href="classcom_1_1metier_1_1_levee.html#a53538a8aa880943423e37e9d6572a102">com.metier.Levee.getPoids</a></div><div class="ttdeci">Double getPoids()</div><div class="ttdef"><b>Definition:</b> <a href="_levee_8java_source.html#l00078">Levee.java:78</a></div></div>
+<div class="ttc" id="classcom_1_1metier_1_1_levee_html_a7a84d0b797922f391fac61a1afcff8d4"><div class="ttname"><a href="classcom_1_1metier_1_1_levee.html#a7a84d0b797922f391fac61a1afcff8d4">com.metier.Levee.setLaDate</a></div><div class="ttdeci">void setLaDate(Date laDate)</div><div class="ttdef"><b>Definition:</b> <a href="_levee_8java_source.html#l00070">Levee.java:70</a></div></div>
+<div class="ttc" id="classcom_1_1tests_1_1_levee_test_html"><div class="ttname"><a href="classcom_1_1tests_1_1_levee_test.html">com.tests.LeveeTest</a></div><div class="ttdef"><b>Definition:</b> <a href="_2_levee_test_8java_source.html#l00019">LeveeTest.java:19</a></div></div>
+<div class="ttc" id="classcom_1_1tests_1_1_levee_test_html_aff3c8682b1ca2e4858d3df467827f7bc"><div class="ttname"><a href="classcom_1_1tests_1_1_levee_test.html#aff3c8682b1ca2e4858d3df467827f7bc">com.tests.LeveeTest.tearDown</a></div><div class="ttdeci">void tearDown()</div><div class="ttdef"><b>Definition:</b> <a href="_2_levee_test_8java_source.html#l00049">LeveeTest.java:49</a></div></div>
+<div class="ttc" id="classcom_1_1metier_1_1_levee_html_ab00b40d8d8274fd910bbc7a5e43595c9"><div class="ttname"><a href="classcom_1_1metier_1_1_levee.html#ab00b40d8d8274fd910bbc7a5e43595c9">com.metier.Levee.getIdLevee</a></div><div class="ttdeci">int getIdLevee()</div><div class="ttdef"><b>Definition:</b> <a href="_levee_8java_source.html#l00094">Levee.java:94</a></div></div>
+<div class="ttc" id="classcom_1_1tests_1_1_levee_test_html_a4a6ce591926f36d36a3ea78544aef5fc"><div class="ttname"><a href="classcom_1_1tests_1_1_levee_test.html#a4a6ce591926f36d36a3ea78544aef5fc">com.tests.LeveeTest.testSetPoids</a></div><div class="ttdeci">void testSetPoids()</div><div class="ttdef"><b>Definition:</b> <a href="_2_levee_test_8java_source.html#l00101">LeveeTest.java:101</a></div></div>
+<div class="ttc" id="classcom_1_1metier_1_1_levee_html_aa61b0db52260baca6dabf83b705aeb77"><div class="ttname"><a href="classcom_1_1metier_1_1_levee.html#aa61b0db52260baca6dabf83b705aeb77">com.metier.Levee.toString</a></div><div class="ttdeci">String toString()</div><div class="ttdef"><b>Definition:</b> <a href="_levee_8java_source.html#l00109">Levee.java:109</a></div></div>
+<div class="ttc" id="classcom_1_1tests_1_1_levee_test_html_a72fdd2dec116f0cf6796747a75e3ec5c"><div class="ttname"><a href="classcom_1_1tests_1_1_levee_test.html#a72fdd2dec116f0cf6796747a75e3ec5c">com.tests.LeveeTest.testGetIdPoubelle</a></div><div class="ttdeci">void testGetIdPoubelle()</div><div class="ttdef"><b>Definition:</b> <a href="_2_levee_test_8java_source.html#l00124">LeveeTest.java:124</a></div></div>
+<div class="ttc" id="namespacecom_1_1metier_html"><div class="ttname"><a href="namespacecom_1_1metier.html">com.metier</a></div><div class="ttdef"><b>Definition:</b> <a href="_habitation_8java_source.html#l00001">Habitation.java:1</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_0a31c64d9f1f2c74acde1e4feea70c37.html">Z:</a></li><li class="navelem"><a class="el" href="dir_66183ff917921ce7e1c24db1515b72af.html">workspace</a></li><li class="navelem"><a class="el" href="dir_af01f8a927658f6dea520803c0646f4e.html">TriselMartins</a></li><li class="navelem"><a class="el" href="dir_acf8adae05f6b95405510d40e6d386db.html">src</a></li><li class="navelem"><a class="el" href="dir_609d7c2b7fd3a4ad70f07dcbdc5d16b6.html">com</a></li><li class="navelem"><a class="el" href="dir_d6f34363c601e1770587896b22846de1.html">tests</a></li><li class="navelem"><b>LeveeTest.java</b></li>
+    <li class="footer">GÃ©nÃ©rÃ© par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
+  </ul>
+</div>
+</body>
+</html>
